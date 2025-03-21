@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Learning Platform</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Coding Learning Platform</h1>
+        <p>Learn the fundamentals of C programming</p>
+    </header>
+
+    <div class="container">
+        <!-- Level 1: Introduction to C -->
+        <h2>Level 1: Introduction to C</h2>
+        <p>C is a powerful general-purpose programming language that was developed in the early 1970s. It is widely used for system programming, application development, and embedded systems due to its efficiency and control over system resources.</p>
+        <p>One of the key features of C is its ability to provide low-level access to memory through pointers. This means that programmers can directly manipulate memory addresses, which is essential for performance-critical applications.</p>
+        <p>C is often referred to as a "high-level assembly language" because it allows programmers to write code that is close to the hardware while still being more readable than assembly language.</p>
+        <p>Another important aspect of C is its portability. Programs written in C can be compiled and run on different types of computer systems with minimal changes.</p>
+        <p>Additionally, C has influenced many other programming languages, including C++, Java, and Python. Understanding C can provide a solid foundation for learning these other languages.</p>
+        <p>Moreover, C's syntax is relatively simple, which makes it an excellent choice for beginners. It allows new programmers to grasp fundamental programming concepts without being overwhelmed by complex syntax.</p>
+        <p>In summary, C is a versatile and powerful language that serves as a great starting point for anyone interested in programming.</p>
+
+        <h3>Practice Area</h3>
+        <p>Write a simple C program that prints "Hello, World!" to the console.</p>
+        <textarea id="practiceArea1">#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!\\n");
+    return 0;
+}
+        </textarea>
+
+        <h3>Quiz</h3>
+        <div class="quiz">
+            <p>1. What is C primarily used for?</p>
+            <input type="text" id="quizAnswer1" placeholder="Your answer here...">
+            <button onclick="checkQuizAnswer1()">Submit</button>
+            <div id="result1" class="result"></div>
+        </div>
+
+        <!-- Level 2: Structure of a C Program -->
+        <h2>Level 2: Structure of a C Program</h2>
+        <p>A C program consists of functions, with the main() function being the entry point. The structure typically includes preprocessor directives, function definitions, and statements.</p>
+        <p>Preprocessor directives, such as #include, are used to include libraries that provide additional functionality. This allows programmers to use pre-written code, which can save time and effort.</p>
+        <p>Functions in C can take parameters and return values, enabling code reusability and modular programming. This means that you can write a function once and call it multiple times throughout your program.</p>
+        <p>Additionally, C supports user-defined functions, which allow programmers to create their own functions tailored to specific tasks. This enhances code organization and readability.</p>
+        <p>Understanding the structure of a C program is crucial for writing efficient and maintainable code. It helps programmers to logically organize their code and understand how different components interact with each other.</p>
+        <p>Moreover, mastering the structure of a C program lays the groundwork for understanding more complex programming concepts, such as object-oriented programming in languages like C++.</p>
+        <p>In summary, understanding the structure of a C program is essential for any programmer, as it forms the basis for writing effective and efficient code.</p>
+
+        <h3>Practice Area</h3>
+        <p>Write a simple C program that includes a function and prints a message.</p>
+        <textarea id="practiceArea2">#include &lt;stdio.h&gt;
+
+void displayMessage() {
+    printf("This is a simple C program.\\n");
+}
+
+int main() {
+    displayMessage();
+    return 0;
+}
+        </textarea>
+
+        <h3>Quiz</h3>
+        <div class="quiz">
+            <p>2. What is the entry point of a C program?</p>
+            <input type="text" id="quizAnswer2" placeholder="Your answer here...">
+            <button onclick="checkQuizAnswer2()">Submit</button>
+            <div id="result2" class="result"></div>
+        </div>
+
+        <!-- Level 3: Compiling and Running a C Program -->
+        <h2>Level 3: Compiling and Running a C Program</h2>
+        <p>To run a C program, you need to compile it using a compiler like GCC (GNU Compiler Collection). The compilation process converts the C code into machine code that the computer can execute.</p>
+        <p>During compilation, the compiler checks for syntax errors and generates an executable file. This file can then be run on the target machine. If there are any errors in your code, the compiler will provide feedback, allowing you to correct them before running the program.</p>
+        <p>Understanding the compilation process is essential for debugging and optimizing your code. It allows you to identify errors early in the development process and improve the performance of your programs.</p>
+        <p>Additionally, C compilers often provide various optimization options that can enhance the performance of the generated code. Learning how to use these options can lead to more efficient programs.</p>
+        <p>Moreover, mastering the compilation process can help you understand how different programming languages handle code execution, which is beneficial when transitioning to other languages.</p>
+        <p>Finally, knowing how to compile and run C programs is a fundamental skill for any programmer, as it forms the basis for working with more complex software development tools and environments.</p>
+        <p>In summary, the compilation process is a critical step in programming that transforms your code into a format that the computer can understand and execute.</p>
+
+        <h3>Practice Area</h3>
+        <p>Use the following command to compile a C program:</p>
+        <textarea id="practiceArea3">gcc filename.c -o outputname
+        </textarea>
+        <p>Then run the program using:</p>
+        <textarea id="practiceArea4">./outputname
+        </textarea>
+
+        <h3>Quiz</h3>
+        <div class="quiz">
+            <p>3. What command is used to compile a C program?</p>
+            <input type="text" id="quizAnswer3" placeholder="Your answer here...">
+            <button onclick="checkQuizAnswer3()">Submit</button>
+            <div id="result3" class="result"></div>
+        </div>
+
+        <!-- Level 4: Comments in C -->
+        <h2>Level 4: Comments in C</h2>
+        <p>Comments are essential for documenting code and explaining its functionality. In C, you can use single-line comments (//) and multi-line comments (/* ... */). Comments are ignored by the compiler, which means they do not affect the execution of the program.</p>
+        <p>Using comments effectively can greatly enhance the readability of your code, making it easier for others (and yourself) to understand the logic behind your implementation. Well-placed comments can clarify complex sections of code and provide context for future reference.</p>
+        <p>Comments can also be used to temporarily disable code during debugging, allowing you to test specific parts of your program without deleting any code. This is particularly useful when you want to isolate issues or test different functionalities.</p>
+        <p>Moreover, writing clear and concise comments is a valuable skill that can improve collaboration in team projects, as it helps team members quickly grasp the purpose of different code sections.</p>
+        <p>In addition, many coding standards and best practices emphasize the importance of comments, making it a crucial aspect of professional software development. Following these standards can lead to more maintainable and understandable code.</p>
+        <p>Finally, learning how to write effective comments can help you develop better coding habits, leading to cleaner and more maintainable code in the long run. Remember, good comments can save time and effort for both you and your collaborators.</p>
+        <p>In summary, comments are a fundamental part of programming that enhance code clarity and maintainability.</p>
+
+        <h3>Practice Area</h3>
+        <p>Add comments to the following code snippet:</p>
+        <textarea id="practiceArea5">#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!\\n"); // Print a greeting
+    return 0; /* Return success */
+}
+        </textarea>
+
+        <h3>Quiz</h3>
+        <div class="quiz">
+            <p>4. What are the two types of comments in C?</p>
+            <input type="text" id="quizAnswer4" placeholder="Your answer here...">
+            <button onclick="checkQuizAnswer4()">Submit</button>
+            <div id="result4" class="result"></div>
+        </div>
+
+        <!-- Level 5: Data Types -->
+        <h2>Level 5: Data Types</h2>
+        <p>C provides several built-in data types to store different kinds of data. The most commonly used data types include <code>int</code> for integers, <code>float</code> for floating-point numbers, and <code>char</code> for single characters. Each data type has its own characteristics and is used for specific purposes.</p>
+        <p>Understanding data types is crucial for memory management and performance optimization. Choosing the appropriate data type can lead to more efficient use of memory and faster execution of your programs. For example, using an <code>int</code> for whole numbers is more efficient than using a <code>float</code>.</p>
+        <p>In addition to the basic data types, C also supports derived data types such as arrays, structures, and unions. Arrays allow you to store multiple values of the same type, while structures enable you to group different data types together.</p>
+        <p>Moreover, C allows for type conversion, enabling you to convert one data type to another when necessary. This flexibility can be useful in various programming scenarios, such as when performing calculations that involve different data types.</p>
+        <p>Furthermore, mastering data types is essential for understanding how data is represented in memory, which is a fundamental concept in computer science and programming. Knowing how much memory each data type consumes can help you write more efficient programs.</p>
+        <p>Finally, a solid grasp of data types will help you write more robust and error-free code, as it allows you to anticipate and handle potential data-related issues effectively. Understanding the limitations and capabilities of each data type is key to successful programming.</p>
+        <p>In summary, data types are a foundational concept in C programming that every programmer must understand to write effective code.</p>
+
+        <h3>Practice Area</h3>
+        <p>Declare variables of different data types:</p>
+        <textarea id="practiceArea6">int age = 25; // Integer
+float salary = 50000.50; // Floating-point
+char grade = 'A'; // Character
+        </textarea>
+
+        <h3>Quiz</h3>
+        <div class="quiz">
+            <p>5. What data type would you use to store a decimal number?</p>
+            <input type="text" id="quizAnswer5" placeholder="Your answer here...">
+            <button onclick="checkQuizAnswer5()">Submit</button>
+            <div id="result5" class="result"></div>
+        </div>
+
+        <!-- Level 6: Variables and Constants -->
+        <h2>Level 6: Variables and Constants</h2>
+        <p>Variables are used to store data that can change during program execution, while constants are fixed values that cannot be altered. In C, you can define constants using the <code>const</code> keyword or the <code>#define</code> preprocessor directive.</p>
+        <p>Understanding the difference between variables and constants is crucial for effective programming. Variables allow for dynamic data manipulation, while constants provide stability and predictability in your code. This distinction helps prevent accidental changes to critical values.</p>
+        <p>Moreover, using constants can help reduce the risk of bugs and errors in your programs. By defining constants for values that should not change, you can make your code more reliable and easier to maintain.</p>
+        <p>In addition, C supports different types of variables, including local and global variables, which have different scopes and lifetimes. Understanding these concepts is essential for managing data effectively in your programs.</p>
+        <p>Furthermore, mastering variables and constants is fundamental for understanding more advanced programming concepts, such as memory management and data structures. Knowing how to use variables and constants effectively can lead to better program design.</p>
+        <p>Finally, a solid understanding of variables and constants will help you write cleaner and more maintainable code, as it encourages good programming practices and organization. This is especially important in larger projects where code readability is crucial.</p>
+        <p>In summary, variables and constants are essential components of C programming that every programmer must master to write effective and efficient code.</p>
+
+        <h3>Practice Area</h3>
+        <p>Define a variable and a constant:</p>
+        <textarea id="practiceArea7">int x = 10; // Variable
+const int MAX = 100; // Constant
+        </textarea>
+
+        <h3>Quiz</h3>
+        <div class="quiz">
+            <p>6. How do you define a constant in C?</p>
+            <input type="text" id="quizAnswer6" placeholder="Your answer here...">
+            <button onclick="checkQuizAnswer6()">Submit</button>
+            <div id="result6" class="result"></div>
+        </div>
+
+        <!-- Level 7: Operators -->
+        <h2>Level 7: Operators</h2>
+        <p>Operators in C are symbols that perform operations on variables and values. C supports various types of operators, including arithmetic operators (like +, -, *, /), relational operators (like ==, !=, <, >), logical operators (like &&, ||, !), and bitwise operators (like &, |, ^).</p>
+        <p>Understanding operators is essential for performing calculations and making decisions in your programs. Each operator has a specific precedence and associativity, which determines the order of operations in expressions.</p>
+        <p>Moreover, C allows for operator overloading, enabling you to define custom behaviors for operators when applied to user-defined types. This can lead to more intuitive and readable code.</p>
+        <p>In addition, mastering operators is crucial for writing efficient algorithms and solving complex problems, as they form the building blocks of logical expressions and calculations.</p>
+        <p>Furthermore, understanding how operators work can help you avoid common pitfalls, such as operator precedence errors, which can lead to unexpected results in your programs.</p>
+        <p>Finally, a solid grasp of operators will enhance your programming skills and enable you to write more sophisticated and efficient code. Knowing how to use operators effectively is key to writing clear and concise programs.</p>
+        <p>In summary, operators are fundamental components of C programming that allow you to manipulate data and control program flow.</p>
+
+        <h3>Practice Area</h3>
+        <p>Use arithmetic operators to calculate the sum and product of two numbers:</p>
+        <textarea id="practiceArea8">int a = 10, b = 5;
+int sum = a + b; // Addition
+int product = a * b; // Multiplication
+        </textarea>
+
+        <h3>Quiz</h3>
+        <div class="quiz">
+            <p>7. What operator is used for addition in C?</p>
+            <input type="text" id="quizAnswer7" placeholder="Your answer here...">
+            <button onclick="checkQuizAnswer7()">Submit</button>
+            <div id="result7" class="result"></div>
+        </div>
+
+        <!-- Level 8: Control Structures -->
+        <h2>Level 8: Control Structures</h2>
+        <p>Control structures allow you to dictate the flow of execution in your program based on certain conditions. The <code>if</code> statement executes a block of code if a specified condition is true, while the <code>else</code> statement provides an alternative block of code if the condition is false.</p>
+        <p>In addition to <code>if</code> statements, C supports other control structures such as <code>switch</code> statements, which allow for multi-way branching based on the value of a variable. This is useful for making decisions based on multiple conditions.</p>
+        <p>Understanding control structures is essential for implementing logic in your programs. They enable you to create dynamic and responsive applications that can adapt to different inputs and conditions.</p>
+        <p>Moreover, C supports looping constructs such as <code>for</code>, <code>while</code>, and <code>do-while</code>, which allow you to execute a block of code multiple times based on specific conditions. This is crucial for tasks that require repetition.</p>
+        <p>Furthermore, mastering control structures is crucial for writing efficient algorithms and managing program flow effectively, as they form the backbone of most programming logic.</p>
+        <p>Finally, a solid understanding of control structures will enhance your problem-solving skills and enable you to write more complex and feature-rich applications. Knowing how to control the flow of your program is key to successful programming.</p>
+        <p>In summary, control structures are essential tools in C programming that allow you to manage how your code executes based on conditions.</p>
+
+        <h3>Practice Area</h3>
+        <p>Use the <code>if</code> statement to check if a number is greater than 10:</p>
+        <textarea id="practiceArea9">int x = 15;
+if (x > 10) {
+    printf("x is greater than 10\\n");
+}
+        </textarea>
+
+        <h3>Quiz</h3>
+        <div class="quiz">
+            <p>8. What is the purpose of the <code>if</code> statement in C?</p>
+            <input type="text" id="quizAnswer8" placeholder="Your answer here...">
+            <button onclick="checkQuizAnswer8()">Submit</button>
+            <div id="result8" class="result"></div>
+        </div>
+
+        <!-- Level 9: Functions -->
+        <h2>Level 9: Functions</h2>
+        <p>Functions are reusable blocks of code that perform a specific task. In C, you can define a function using the <code>return_type function_name(parameters)</code> syntax, followed by the function body. This allows you to encapsulate logic and reduce redundancy in your programs.</p>
+        <p>Functions promote code reusability and modular programming, allowing you to break down complex problems into smaller, manageable pieces. This makes your code easier to read, maintain, and debug.</p>
+        <p>Moreover, C supports both built-in and user-defined functions, giving you the flexibility to create functions tailored to your specific needs. This is particularly useful for tasks that are repeated throughout your program.</p>
+        <p>Understanding how to define and use functions is essential for writing efficient and organized code. Functions can take parameters and return values, allowing for dynamic behavior based on input.</p>
+        <p>Furthermore, mastering functions is crucial for understanding more advanced programming concepts, such as recursion and higher-order functions. These concepts can greatly enhance your programming capabilities.</p>
+        <p>Finally, a solid grasp of functions will enhance your programming skills and enable you to write more sophisticated and efficient code. Functions are a fundamental building block of programming in C.</p>
+        <p>In summary, functions are essential components of C programming that allow you to create organized, reusable, and efficient code.</p>
+
+        <h3>Practice Area</h3>
+        <p>Define a function that takes two integers as arguments and returns their sum:</p>
+        <textarea id="practiceArea10">int add(int a, int b) {
+    return a + b;
+}
+        </textarea>
+
+        <h3>Quiz</h3>
+        <div class="quiz">
+            <p>9. What is the purpose of a function in C?</p>
+            <input type="text" id="quizAnswer9" placeholder="Your answer here...">
+            <button onclick="checkQuizAnswer9()">Submit</button>
+            <div id="result9" class="result"></div>
+        </div>
+
+        <!-- Level 10: Arrays and Strings -->
+        <h2>Level 10: Arrays and Strings</h2>
+        <p>Arrays are collections of elements of the same data type stored in contiguous memory locations. Strings are arrays of characters terminated by a null character. Understanding arrays is crucial for managing collections of data efficiently.</p>
+        <p>Arrays allow you to store and manipulate multiple values using a single variable name. This is particularly useful when dealing with lists of data, such as scores or names.</p>
+        <p>Moreover, C provides various functions for manipulating strings, such as <code>strlen</code> for finding the length of a string and <code>strcpy</code> for copying strings. Mastering these functions is essential for effective string handling.</p>
+        <p>In addition, C supports multi-dimensional arrays, which allow you to create matrices and other complex data structures. This is particularly useful in scientific computing and data analysis.</p>
+        <p>Furthermore, understanding arrays and strings is fundamental for working with more advanced data structures, such as linked lists and trees. These structures often rely on arrays for their implementation, making it essential to grasp how arrays work.</p>
+        <p>Finally, a solid grasp of arrays and strings will enhance your programming skills and enable you to write more efficient and effective code. Knowing how to manipulate arrays and strings is a key skill for any programmer.</p>
+
+        <h3>Practice Area</h3>
+        <p>Declare an array of integers and a string:</p>
+        <textarea id="practiceArea11">int scores[5] = {90, 80, 70, 60, 50};
+char name[] = "John Doe";
+        </textarea>
+
+        <h3>Quiz</h3>
+        <div class="quiz">
+            <p>10. What is the purpose of an array in C?</p>
+            <input type="text" id="quizAnswer10" placeholder="Your answer here...">
+            <button onclick="checkQuizAnswer10()">Submit</button>
+            <div id="result10" class="result"></div>
+        </div>
+
+        <!-- Level 11: Pointers -->
+        <h2>Level 11: Pointers</h2>
+        <p>Pointers are variables that store the memory address of another variable. In C, you can declare a pointer using the <code>type *name</code> syntax. Understanding pointers is crucial for memory management and dynamic data structures.</p>
+        <p>Pointers allow you to allocate memory dynamically and manipulate data at a low level. This is particularly useful for creating complex data structures like linked lists and trees, where the size of the data structure can change during runtime.</p>
+        <p>Moreover, pointers enable you to create complex data structures such as linked lists, trees, and graphs. These structures are essential for many algorithms and applications in computer science.</p>
+        <p>In addition, C allows for pointer arithmetic, which enables you to navigate through arrays and manipulate data efficiently. This is a powerful feature that can lead to more optimized code.</p>
+        <p>Furthermore, mastering pointers is essential for understanding how memory works in C, which is a fundamental concept in computer science. Knowing how to use pointers effectively can greatly enhance your programming capabilities.</p>
+        <p>Finally, a solid grasp of pointers will enhance your programming skills and enable you to write more sophisticated and efficient code. Pointers are a fundamental concept that every C programmer must understand.</p>
+        <p>In summary, pointers are essential components of C programming that allow you to manage memory and create complex data structures.</p>
+
+        <h3>Practice Area</h3>
+        <p>Declare a pointer to an integer:</p>
+        <textarea id="practiceArea12">int x = 10;
+int *ptr = &x;
+        </textarea>
+
+                <h3>Quiz</h3>
+        <div class="quiz">
+            <p>11. What is the purpose of a pointer in C?</p>
+            <input type="text" id="quizAnswer11" placeholder="Your answer here...">
+            <button onclick="checkQuizAnswer11()">Submit</button>
+            <div id="result11" class="result"></div>
+        </div>
+
+        <!-- Simple Compiler Section -->
+        <h2>Simple C Compiler</h2>
+        <p>Write your C code below and click "Compile" to run it:</p>
+        <textarea id="compilerCode" placeholder="Write your C code here..."></textarea>
+        <button onclick="compileCode()">Compile</button>
+        <div id="compilerResult" class="result"></div>
+    </div>
+
+    <script>
+        function checkQuizAnswer1() {
+            const answer = document.getElementById('quizAnswer1').value.toLowerCase();
+            const resultDiv = document.getElementById('result1');
+            if (answer.includes("system programming") || answer.includes("application development") || answer.includes("embedded systems")) {
+                resultDiv.textContent = "Correct! C is widely used for system programming, application development, and embedded systems.";
+                resultDiv.className = "result correct";
+            } else {
+                resultDiv.textContent = "Wrong answer. Try again!";
+                resultDiv.className = "result wrong";
+            }
+            resultDiv.style.display = "block";
+        }
+
+        function checkQuizAnswer2() {
+            const answer = document.getElementById('quizAnswer2').value.toLowerCase();
+            const resultDiv = document.getElementById('result2');
+            if (answer.includes("main")) {
+                resultDiv.textContent = "Correct! The main function is the entry point of a C program.";
+                resultDiv.className = "result correct";
+            } else {
+                resultDiv.textContent = "Wrong answer. Try again!";
+                resultDiv.className = "result wrong";
+            }
+            resultDiv.style.display = "block";
+        }
+
+        function checkQuizAnswer3() {
+            const answer = document.getElementById('quizAnswer3').value.toLowerCase();
+            const resultDiv = document.getElementById('result3');
+            if (answer.includes("gcc")) {
+                resultDiv.textContent = "Correct! The command 'gcc' is used to compile a C program.";
+                resultDiv.className = "result correct";
+            } else {
+                resultDiv.textContent = "Wrong answer. Try again!";
+                resultDiv.className = "result wrong";
+            }
+            resultDiv.style.display = "block";
+        }
+
+        function checkQuizAnswer4() {
+            const answer = document.getElementById('quizAnswer4').value.toLowerCase();
+            const resultDiv = document.getElementById('result4');
+            if (answer.includes("single-line") && answer.includes("multi-line")) {
+                resultDiv.textContent = "Correct! The two types of comments in C are single-line and multi-line.";
+                resultDiv.className = "result correct";
+            } else {
+                resultDiv.textContent = "Wrong answer. Try again!";
+                resultDiv.className = "result wrong";
+            }
+            resultDiv.style.display = "block";
+        }
+
+        function checkQuizAnswer5() {
+            const answer = document.getElementById('quizAnswer5').value.toLowerCase();
+            const resultDiv = document.getElementById('result5');
+            if (answer.includes("float")) {
+                resultDiv.textContent = "Correct! The 'float' data type is used to store decimal numbers.";
+                resultDiv.className = "result correct";
+            } else {
+                resultDiv.textContent = "Wrong answer. Try again!";
+                resultDiv.className = "result wrong";
+            }
+            resultDiv.style.display = "block";
+        }
+
+        function checkQuizAnswer6() {
+            const answer = document.getElementById('quizAnswer6').value.toLowerCase();
+            const resultDiv = document.getElementById('result6');
+            if (answer.includes("const") || answer.includes("#define")) {
+                resultDiv.textContent = "Correct! You can define a constant using 'const' or '#define'.";
+                resultDiv.className = "result correct";
+            } else {
+                resultDiv.textContent = "Wrong answer. Try again!";
+                resultDiv.className = "result wrong";
+            }
+            resultDiv.style.display = "block";
+        }
+
+        function checkQuizAnswer7() {
+            const answer = document.getElementById('quizAnswer7').value.toLowerCase();
+            const resultDiv = document.getElementById('result7');
+            if (answer.includes("+")) {
+                resultDiv.textContent = "Correct! The '+' operator is used for addition in C.";
+                resultDiv.className = "result correct";
+            } else {
+                resultDiv.textContent = "Wrong answer. Try again!";
+                resultDiv.className = "result wrong";
+            }
+            resultDiv.style.display = "block";
+        }
+
+        function checkQuizAnswer8() {
+            const answer = document.getElementById('quizAnswer8').value.toLowerCase();
+            const resultDiv = document.getElementById('result8');
+            if (answer.includes("execute") || answer.includes("conditional")) {
+                resultDiv.textContent = "Correct! The 'if' statement is used to execute a block of code based on a condition.";
+                resultDiv.className = "result correct";
+            } else {
+                resultDiv.textContent = "Wrong answer. Try again!";
+                resultDiv.className = "result wrong";
+            }
+            resultDiv.style.display = "block";
+        }
+
+        function checkQuizAnswer9() {
+            const answer = document.getElementById('quizAnswer9').value.toLowerCase();
+            const resultDiv = document.getElementById('result9');
+            if (answer.includes("reusable") || answer.includes("task")) {
+                resultDiv.textContent = "Correct! Functions are reusable blocks of code that perform specific tasks.";
+                resultDiv.className = "result correct";
+            } else {
+                resultDiv.textContent = "Wrong answer. Try again!";
+                resultDiv.className = "result wrong";
+            }
+            resultDiv.style.display = "block";
+        }
+
+        function checkQuizAnswer10() {
+            const answer = document.getElementById('quizAnswer10').value.toLowerCase();
+            const resultDiv = document.getElementById('result10');
+            if (answer.includes("store") && answer.includes("multiple")) {
+                resultDiv.textContent = "Correct! Arrays are used to store multiple values of the same type.";
+                resultDiv.className = "result correct";
+            } else {
+                resultDiv.textContent = "Wrong answer. Try again!";
+                resultDiv.className = "result wrong";
+            }
+            resultDiv.style.display = "block";
+        }
+
+        function checkQuizAnswer11() {
+            const answer = document.getElementById('quizAnswer11').value.toLowerCase();
+            const resultDiv = document.getElementById('result11');
+            if (answer.includes("memory address") || answer.includes("variable")) {
+                resultDiv.textContent = "Correct! Pointers store the memory address of another variable.";
+                resultDiv.className = "result correct";
+            } else {
+                resultDiv.textContent = "Wrong answer. Try again!";
+                resultDiv.className = "result wrong";
+            }
+            resultDiv.style.display = "block";
+        }
+
+        // Simple Compiler Function
+        function compileCode() {
+            const code = document.getElementById('compilerCode').value;
+            const resultDiv = document.getElementById('compilerResult');
+
+            // Simulated output for demonstration purposes
+            resultDiv.textContent = "Compiling your code...\n" + code; // Simulated output
+            resultDiv.className = "result correct"; // Simulate success
+            resultDiv.style.display = "block";
+        }
+    </script>
+</body>
+</html>
